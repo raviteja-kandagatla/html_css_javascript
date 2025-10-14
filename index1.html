@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<script >
+    var post1 = {
+        content: "this is guy super",
+        likes: 200,
+        shares: 20
+    }
+
+    var post2 = {
+        content: "this is guy bit wrong",
+        likes: 10,
+        shares: 0
+    }
+    
+    var post3 = {
+        content: "this is mike",
+        likes: 20,
+        shares: 40
+    }
+
+
+    var facebook = {
+        user: "NAna",
+        password: "new",
+        email: "nn@example.com",
+        profile: "reference-Image",
+        posts: [post1, post2],
+        greet: function() {
+            console.log("hello nana")
+        }
+    }
+    facebook.greet()
+
+    var facebook2 = {
+        user: "sdf",
+        password: "ryg",
+        email: "and@example.com",
+        profile: "ref-Image",
+        posts: [post3]
+    }
+
+
+    var posts = [post1, post2, post3, {content: "only content"}]
+
+    for (post of posts) {
+        //do something 
+        console.log(post.likes)
+        console.log("number of likes on post: " + post.likes)
+        post.reactions = post.likes
+
+        console.log(posts)
+    }
+
+    var users = [facebook, facebook2] 
+    for (user of users) {
+        user.interests = []
+        for (post of user.posts) {
+            post.reactions = post.likes
+            delete post.likes
+        }
+    }
+    
+    // console.log(facebook)
+    // console.log("we can done with use for loop")
+    // console.log(users)
+    function replaceLikesWithReactions(user) {
+        for (post of user.posts) {
+            post.reactions = post.likes
+            delete post.likes
+        }
+    }
+
+    replaceLikesWithReactions(facebook)
+    replaceLikesWithReactions(facebook2)
+
+
+</script>
+
+<body>
+
+
+</body>

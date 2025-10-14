@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+<h1> Hello, Worlf</h1>
+<h2> Hello, Worl</h2>
+<h3> Hello, Wor</h3>
+<h4> Hello, Wo</h4>
+<script >
+var friends = ['amria', 'amaro', 'amazon', 'steve'] 
+friends.pop()
+friends.push('satin')
+console.log(friends)
+friends[friends.indexOf('satin')] = 'dawg'
+console.log(friends)
+
+var post1 = {
+    content: "this is my cim",
+    likes: 300,
+    share: 20
+}
+var post2 = {
+    content: "zebraaaaaa constant",
+    likes: 30560,
+    share: 2670
+}
+
+var facebook = {
+    user: 'nana',
+    password: 'dsf',
+    email: 'df@yahoo.com',
+    friends: ['mike', 'perry', 'dsf']
+}
+ 
+var posts = [post1, post2]
+for (let index of posts) {
+    console.log(index.likes)
+    index.likes = index.share
+    console.log(index)
+}
+
+var facebookUserOne = {
+    userName:"nane",
+    password: 'dsf',
+    friedn: ["ser", "sar", "awe"],
+    posts: [post1, post2],
+    greet: function(){
+        console.log("hello")
+    }
+}
+
+function getAge(birthDate){
+    var givenDate = new Date(birthDate) 
+    console.log("Given Date:", givenDate.toLocaleString('en-US',{ hour24:true }))
+    var today = new Date()
+    console.log(today)
+    console.log(today.getDay)
+
+}
+getAge("01/01/1998")
+
+function facebookLikesWithShare(){
+    for (let index of posts) {
+        index.likes = index.share
+        delete index.likes
+    }
+    return posts
+}
+    console.log(facebookLikesWithShare) 
+   
+facebookLikesWithShare()   
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+h1{
+    color: black;
+}
+
+body{
+    font-family: sans-serif;
+    background: greenyellow;
+    text-align: match-parent;
+    padding: 60px;
+}
