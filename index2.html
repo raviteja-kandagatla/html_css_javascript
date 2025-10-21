@@ -4,58 +4,80 @@
 </head>
 
 <body>
-    <div> 
-        <img id="logo" src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"/>
-        <input type="text" placeholder=" Search .."/>
+    <div id="header">
+        <div id="logo-search-container">
+            <img id="logo" src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"/>
+            <input type="text" placeholder=" Search .."/>
+        </div> 
         <button>log in</button>
-    </div>
-
+</div>
 <div id="main-section-container">
-        <b>how developers work</b>
+    <img id ="article-cover" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftn1bmwsh162yol9bid5p.png">
+<!-- <h1>
+        <b>HOW DEVELOPER'S WORK</b>
+        </h1> -->
 </div>
     
 
     <div class="column2">
-        <h1>2 - Software Deployment</h1>
+        <h1>Software Deployment</h1>
 
 The next one is software deployment. Once the feature is developed, it needs to be released to the end users, which means you need an environment, where your application will be running and be available for the end users. 
 
     </div>
 
-    <div class="column3">
-        <p> paragraph1</p>
-        <b><p class="article-info"><i>Written by: Nana Janasia</i></p></b>
-        <b></b><p class="date-info"><i>date: 19-10-2025</i></p></b>
-        <h4> section header </h4>
-        <p> paragraph1 </p>
+    <div id="main-section-article">
+        <div id="article-section">
+            <div>
+                <p> paragraph1</p>
+                <b><p class="article-info"><i>Written by: Brad Bale</i></p></b>
+                <b></b><p class="date-info"><i>date: 19-10-2025</i></p></b>
+                <h4> section header </h4>
+                <p> paragraph1 </p>
 
-        <ul>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-            <li>item4</li>
-        </ul>
-    <i>2.1 - Operating Systems & Linux Basics</i>
-And as a DevOps engineer you need to know how to
+                <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                </ul>
+                <i>2.1 - Operating Systems & Linux Basics</i>
+                And as a DevOps engineer you need to know how to
      
-    provision and prepare these environments and
-    how to maintain them.
+                provision and prepare these environments and
+                how to maintain them.
 
-And for that you need knowledge of general server administration like creating virtual machines, mostly with Linux operating system, installing software, doing patches, configure networking on premise as well as on cloud.
+                And for that you need knowledge of general server administration like creating virtual machines, mostly with Linux operating system, installing software, doing patches, configure networking on premise as well as on cloud.
+            </div>
+        </div>
+        
     </div>
 
-    <div>
+    <div id="side-section">
+<!--
         <img id ="article-cover" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftn1bmwsh162yol9bid5p.png">
+        -->
         <h2> Side section</h2>
         <h3> Another article title</h3>
         <h4> ANother article titlezz</h4>
         <a href="https://dev.to/techworld_with_nana/from-zero-to-devops-engineer-devops-roadmap-for-your-specific-background-4h8n">Click to see article</a>
-    </div>    
+    </div>  
+</div>      
 </body>
-
+</html>
 <style>
+    header {
+        width: 250px;
+        margin-left: 10px;
+        padding: 5px;
+        background-color: white;
+    }
+    body {
+        background-color: aliceblue;
+    }
+
     h1 {
-        color:green
+        color: black;
     }
 
     a {
@@ -64,7 +86,7 @@ And for that you need knowledge of general server administration like creating v
     }
 
     div {
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         margin: 0.5px 0.5px;
     }
 
@@ -73,7 +95,8 @@ And for that you need knowledge of general server administration like creating v
     }
 
     #article-cover {
-        width: 450px;
+        width: 70%;
+        max-width: 1000px;
     }
 
     .article-info {
@@ -85,17 +108,27 @@ And for that you need knowledge of general server administration like creating v
     }
 
     #main-section-container {
-        display: flex;
-        flex-direction: row;
+/*        display: flex;
+         flex-direction: row; 
         justify-content: space-between;
-        gap: 15px;
+        align-items: flex-start;
+        width: 50%;
+ gap: 20px; 
+        margin: 20px; */
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+/*        gap: 20px;
+        margin: 20px; */
+        margin-top: 10px;
     }
 
     .column2 {
         flex: 1;
-        border: 5px solid black;
+/*        border: 5px solid black;
         padding: 5px;
-        box-sizing: border-box;
+        box-sizing: border-box; */
     }
 
     .box {
@@ -107,8 +140,56 @@ And for that you need knowledge of general server administration like creating v
     }
 
     #article-cover {
-        width: 100%;
-        max-width: 100%;
+  /*       width: 40%; */
+  /*      max-width: 50%; */
+        background-color: white;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo-search-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    #header input {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    #article-section {
+/* flex-grow: 1;
+    */
+/*  width: 450px; */
+    width: 50%;
+    }
+
+    .article-cover {
+        color: black;
+    }
+
+    #main-section-article {
+        flex: 3;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    #side-section {
+/*        flex-direction: column;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: #f4f4f4; */
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        border: 1px solid #ccc;
     }
 
 </style>
