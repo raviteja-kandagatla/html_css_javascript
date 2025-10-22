@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Article Layout</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo-search-container">
+            <img id="logo" src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"/>
+            <input type="text" placeholder="Search .."/>
+        </div>
+        <button>Log in</button>
+    </div>
+
+    <!-- MAIN CONTENT (image/article + side section) -->
+    <div id="main-section-container">
+
+        <!-- LEFT SIDE (image + article) -->
+        <div id="main-section-article">
+            <img id="article-cover" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftn1bmwsh162yol9bid5p.png" alt="DevOps Image">
+
+            <h1>Article title</h1>
+            <p>Short information on article</p>
+            <p class="article-info"><i>written by: Nana Janashia</i></p>
+            <p class="date-info"><i>date: 2022.10.21</i></p>
+
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <h4>section header</h4>
+            <p>paragraph 3</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE (side section) -->
+        <div id="side-section">
+            <div class="side-box">
+                <h3>Side section</h3>
+                <p>Another article title</p>
+                <p>Another short article info</p>
+                <a href="#">Click to view article</a>
+            </div>
+
+            <div class="side-box">
+                <h3>Also Side section</h3>
+                <p>Article title</p>
+                <p>short description</p>
+                <a href="#">Click to view article</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">This is the footer</div>
+
+</body>
+</html>
+
+<style>
+/* BODY */
+body {
+    background-color: #cfe2f3; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+#logo-search-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 40px;
+}
+
+#header input {
+    width: 200px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#header button {
+    font-size: 18px;
+    padding: 10px 22px;
+    color: #0077cc;              
+    border: 1.5px solid #0077cc;
+    background-color: #ffffff;   
+    border-radius: 25px;         /* rounder corners */
+    cursor: pointer;
+    transition: all 0.3s ease;   /* smooth hover animation */
+}
+
+#header button:hover {
+    background-color: #0077cc;   /* blue background on hover */
+    color: #ffffff;              /* white text on hover */
+    box-shadow: 0 0 8px rgba(0, 119, 204, 0.4); /* subtle glow */
+}
+
+/* MAIN SECTION CONTAINER (centered layout) */
+#main-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px auto;
+    width: 80%; /* Keeps content centered */
+    gap: 30px;
+}
+
+/* LEFT: ARTICLE AREA */
+#main-section-article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    width: 65%;
+}
+
+#article-cover {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#main-section-article h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.article-info {
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.date-info {
+    color: darkorange;
+    font-style: italic;
+}
+
+/* RIGHT: SIDE SECTION (stacked boxes) */
+#side-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+#side-section .side-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+#side-section .side-box h3 {
+    margin: 0 0 5px 0;
+}
+
+#side-section .side-box a {
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#side-section .side-box a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+#footer {
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+</style>
