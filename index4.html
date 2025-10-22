@@ -16,7 +16,7 @@
                 <input type="text" placeholder="Search .."/>
             </div>
 
-            <button id="create-post-btn">Create Post</button>
+            <button onclick="handleCreatePost()">Create Post</button>
         </div>
         <p id="message"></p>
     </div>        
@@ -64,7 +64,7 @@
     <!-- FOOTER -->
     <div id="footer">This is the footer</div>
 
-    <script>
+    <!--<script>
         document.addEventListener("DOMContentLoaded", function() {
             const btn = document.getElementById("create-post-btn");
             const msg = document.getElementById("message");
@@ -77,6 +77,13 @@
                 document.getElementById("message").innerText ="Clicked on create Post Button "
         }
         document.getElementById("login-btn").addEventListener("click", handleCreatePost); */
+    </script> -->
+
+    <script>
+        function handleCreatePost(){
+            console.log("CLicked on create post button")
+        }
+        handleCreatePost()
     </script>
 </body>
 </html>
