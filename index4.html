@@ -6,6 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Article Layout</title>
+    <script>
+        function handleCreatePost(){
+            //console.log("CLicked on create post button")//
+            document.getElementById("post-form-container").style.display = "block"
+        }
+        //handleCreatePost()//
+    </script>
 </head>
 
 <body>
@@ -19,7 +26,19 @@
             <button onclick="handleCreatePost()">Create Post</button>
         </div>
         <p id="message"></p>
-    </div>        
+    </div>
+    
+    <div id="post-form-container">
+        <form>
+            <label><b>Title</b></label>
+            <input name="text" placeholder="Enter title">
+            <label><b>Description</b></label>
+            <input type="text" placeholder="Enter Description">
+            <label><b>Post</b></label>
+            <input type="text" placeholder="Your Post">
+        </form>
+    </div>
+
     <!-- MAIN CONTENT (image/article + side section) -->
     <div id="main-section-container">
 
@@ -79,11 +98,12 @@
         document.getElementById("login-btn").addEventListener("click", handleCreatePost); */
     </script> -->
 
-    <script>
+    <!-- <script>
         function handleCreatePost(){
-            console.log("CLicked on create post button")
+            //console.log("CLicked on create post button")//
+            document.getElementById("post-form-container").style.display = "block"
         }
-        handleCreatePost()
-    </script>
+        handleCreatePost()//
+    </script> -->
 </body>
 </html>

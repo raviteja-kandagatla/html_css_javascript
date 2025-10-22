@@ -133,3 +133,16 @@ body {
 button:hover {
     cursor: pointer;
 }
+
+#post-form-container {
+    border: 1px solid black; 
+    max-width: 300px;
+    margin: auto;
+    display: none;
+}
+
+#post-form-container input {
+    width: 100%;   
+    margin: 5px 0 20px;
+    padding: 10px;
+}
