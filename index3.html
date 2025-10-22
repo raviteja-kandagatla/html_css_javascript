@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Article Layout</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div id="logo-search-container">
+            <img id="logo" src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"/>
+            <input type="text" placeholder="Search .."/>
+        </div>
+        <button>Log in</button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-section-container">
+        <!-- LEFT SIDE (ARTICLE) -->
+        <article>
+            <img id="article-cover" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftn1bmwsh162yol9bid5p.png" alt="DevOps Image">
+
+            <h1>Article title</h1>
+            <p>Short information on article</p>
+            <p class="article-info"><i>written by: Nana Janashia</i></p>
+            <p class="date-info"><i>date: 2022.10.21</i></p>
+
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <h4>section header</h4>
+            <p>paragraph 3</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </article>
+
+        <!-- RIGHT SIDE (SIDE SECTIONS) -->
+        <aside>
+            <div class="side-box">
+                <h3>Side section</h3>
+                <p>Another article title</p>
+                <p>Another short article info</p>
+                <a href="#">Click to view article</a>
+            </div>
+
+            <div class="side-box">
+                <h3>Also Side section</h3>
+                <p>Article title</p>
+                <p>short description</p>
+                <a href="#">Click to view article</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>This is the footer</footer>
+
+</body>
+</html>
+<style>
+/* BODY */
+body {
+    background-color: #cfe2f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#logo-search-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 40px;
+}
+
+header input {
+    width: 200px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-size: 16px;
+    padding: 6px 14px;
+    color: blue;
+    border: 1.5px solid blue;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* MAIN SECTION */
+#main-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+/* LEFT SIDE (ARTICLE) */
+article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    width: 68%;
+    padding: 15px;
+}
+
+#article-cover {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.article-info {
+    color: red;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.date-info {
+    color: darkorange;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* RIGHT SIDE (SIDE SECTIONS) */
+aside {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+aside .side-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+aside h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+aside a {
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+</style>
