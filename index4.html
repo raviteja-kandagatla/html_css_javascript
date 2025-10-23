@@ -6,16 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Article Layout</title>
-    <script>
-        function handleCreatePost(){
-            //console.log("CLicked on create post button")//
-            document.getElementById("post-form-container").style.display = "block"
-        }
-        function hidePostForm() {
-            document.getElementById("post-form-container").style.display = "none"
-        }
-        //handleCreatePost()//
-    </script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -35,12 +26,16 @@
         <form>
             <label><b>Title</b></label>
             <input name="text" placeholder="Enter title">
+            <!-- <input name="text" placeholder="Enter title" required> -->
             <label><b>Description</b></label>
             <input type="text" placeholder="Enter Description">
             <label><b>Post</b></label>
-            <input type="text" placeholder="Your Post">
+            <textarea placeholder="Your Post"></textarea>
             <button id="hide-btn" onclick="hidePostForm()">Hide form</button>
             <button id="save-btn">Save form</button>
+
+            <input type="email">
+            <input type="password">
         </form>
     </div>
 

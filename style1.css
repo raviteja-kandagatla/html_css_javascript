@@ -141,7 +141,7 @@ button:hover {
     display: none;
 }
 
-#post-form-container input {
+#post-form-container input, textarea {
     width: 100%;   
     margin: 5px 0 20px;
     padding: 10px;
